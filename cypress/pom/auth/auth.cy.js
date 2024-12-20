@@ -37,4 +37,12 @@ export default class AuthPom {
     static inputInvalidPassword () {
         cy.get('#password').click().type ('secret_sauce1')
     }
+
+    static hamburgerMenu () {
+       cy.get('.bm-burger-button').click()
+    }
+
+    static logoutButton () {
+        cy.get('#logout_sidebar_link').click()
+    }
 }
